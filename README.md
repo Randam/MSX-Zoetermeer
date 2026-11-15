@@ -19,14 +19,16 @@ Het formulier opent een ingevulde mail aan `msxzoetermeer@gmail.com`. De bezoeke
 3. Beantwoord aanvragen voor tafelruimte en bijdragen apart. Bevestiging van het e-mailadres geeft nog geen tafelplek of spreektijd.
 4. Verwerk afmeldingen via de groepsmail. Bewaar evenementgegevens alleen zolang ze nodig zijn voor die editie.
 
-## Voorstel voor automatische bevestiging per e-mail
+## Voorstel voor automatische aanmeldingen zonder eigen backend
 
-Laat de site op GitHub Pages staan. Koppel het formulier aan een klein HTTPS-eindpunt en gebruik de [Brevo-API voor dubbele opt-in](https://developers.brevo.com/reference/create-doi-contact). Het eindpunt valideert de gegevens en roept Brevo aan met een API-sleutel die alleen aan de serverkant beschikbaar is. Beperk inzendingen per adres en per IP om misbruik van bevestigingsmails tegen te gaan.
+Laat de site op GitHub Pages staan en gebruik twee [Brevo-formulieren](https://help.brevo.com/hc/en-us/articles/208771869-Create-a-sign-up-form-in-Brevo). Brevo Free heeft een limiet van [300 e-mails per dag](https://help.brevo.com/hc/en-us/articles/208580669-FAQs-What-are-the-limits-of-the-Free-plan). Deel de openbare formulierlinks via de website. Brevo beheert de formulieren, bevestigingen en contactgegevens.
 
-- Maak een lijst per editie en een lijst voor terugkerende updates. Geef aan Brevo alleen de lijst-ID's door die de bezoeker heeft gekozen. Een aanvraag voor een tafel of bijdrage is onderdeel van het bezoek en krijgt een tekstveld voor de omschrijving.
-- Activeer een Nederlandstalig bevestigingssjabloon met een link. Laat het eindpunt op de website alleen melden dat de bezoeker diens inbox moet bekijken. Verwerk het bezoek en de gekozen updates zodra de link is aangeklikt. Meld bij de bevestiging dat de organisatie een tafelplek of bijdrage afzonderlijk beoordeelt.
-- Bewaar het moment van bevestigen en de gemaakte keuzes. Geef elke update een afmeldlink en verwijder evenementdetails na de afgesproken bewaartermijn. Test herhaalde aanmeldingen met een bestaand adres zodat een nieuwe aanmelding de eerdere toestemming voor updates alleen wijzigt bij een expliciete keuze.
-- Voor ingebruikname zijn een Brevo-account, een geverifieerde afzender, het bevestigingssjabloon, de lijsten en het HTTPS-eindpunt nodig. Test daarna de volledige ontvangst en bevestigingslink met een testadres.
+1. Maak de lijst **MSX-updates**. Koppel hieraan een formulier met e-mailadres, toestemming voor updates en dubbele bevestiging. Verstuur uitnodigingen als campagne naar deze lijst en laat de afmeldlink in iedere nieuwsbrief staan.
+2. Maak **Deelnemers 30 januari 2027** en koppel hieraan een eigen formulier met dubbele bevestiging. Vraag naam, e-mailadres, tafelplek (ja/nee), bijdrage (ja/nee) en een korte omschrijving van de bijdrage. Dit formulier heeft eigen bevestigingstekst en is alleen gekoppeld aan de deelnemerslijst.
+3. Open de deelnemerslijst onder **CRM → Contacts** en toon de velden voor tafelplek, bijdrage en omschrijving als kolommen. Die gegevens kunnen ook mee in een [CSV-export](https://help.brevo.com/hc/en-us/articles/5310065850642-Export-your-contacts-from-Brevo). Een aanvraag voor tafelplek of spreektijd beoordeelt de organisatie zelf.
+4. Test voor ingebruikname een nieuw adres, een bestaande abonnee die zich voor de bijeenkomst aanmeldt en iemand die na afmelding voor updates een bezoek aanvraagt. Controleer de bevestigingsmails, beide lijstlidmaatschappen en de afmeldlink. Maak bij een volgende editie een eigen deelnemerslijst en formulier. Exporteer de benodigde gegevens van de vorige editie voordat je dezelfde contactvelden opnieuw gebruikt.
+
+Gebruik bij voorkeur een afzender op een [geverifieerd eigen domein](https://help.brevo.com/hc/en-us/articles/12163873383186-Authenticate-your-domain-with-Brevo-Brevo-code-DKIM-DMARC). De groepsmail kan het antwoordadres zijn.
 
 ## Bronnen
 
