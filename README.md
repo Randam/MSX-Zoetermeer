@@ -1,6 +1,6 @@
 # MSX Zoetermeer
 
-Nederlandstalige website van de MSX-gebruikersgroep in Zoetermeer. GitHub Pages publiceert de map `docs/` vanaf `main`. Voor lokaal gebruik is geen build of installatie nodig.
+Nederlandstalige website van de MSX-gebruikersgroep in Zoetermeer. De website staat op [msxzoetermeer.nl](https://msxzoetermeer.nl/), met DNS via Cloudflare. GitHub Pages publiceert de map `docs/` vanaf `main`. Voor lokaal gebruik is geen build of installatie nodig.
 
 ```sh
 python3 -m http.server 8765 --directory docs
