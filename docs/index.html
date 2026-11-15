@@ -13,7 +13,6 @@
   <meta name="theme-color" content="#242423">
   <link rel="icon" href="assets/msx.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <script src="signup.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#inhoud">Direct naar inhoud</a>
@@ -70,9 +69,26 @@
             <span class="mark" aria-hidden="true">↘</span>
             <h3>Praktisch</h3>
             <p>Koffie en thee zijn te koop tegen vriendelijke prijzen. Gratis parkeren kan in de buurt. Iets lekkers meenemen om te delen wordt gewaardeerd.</p>
-            <p class="note">De locatie en tijden voor januari volgen.</p>
+            <p class="note">De tijden voor januari volgen.</p>
+            <a class="underlined" href="#locatie">Locatie en route <span aria-hidden="true">↓</span></a>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="location light" id="locatie" aria-labelledby="location-title">
+      <div class="wrap location-layout">
+        <div class="section-head">
+          <p class="eyebrow"><span class="square"></span> Locatie en route</p>
+          <h2 id="location-title">De Vlieger</h2>
+          <address>Wijkcentrum De Vlieger<br>Groen-blauwlaan 133<br>2718 GH Zoetermeer</address>
+          <p>Het wijkcentrum ligt in Rokkeveen, bij winkelcentrum De Vlieger. Met de auto volg je de Groen-blauwlaan naar nummer 133. Je kunt gratis parkeren voor het gebouw of achter het gebouw bij het winkelcentrum.</p>
+          <a class="button" href="https://www.google.com/maps/dir/?api=1&amp;destination=Groen-blauwlaan%20133%2C%202718%20GH%20Zoetermeer">Plan je route <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="location-map">
+          <iframe title="Kaart met Wijkcentrum De Vlieger in Zoetermeer" loading="lazy" width="640" height="420" src="https://www.openstreetmap.org/export/embed.html?bbox=4.4872%2C52.0360%2C4.4988%2C52.0416&amp;layer=mapnik&amp;marker=52.038794%2C4.493025"></iframe>
+          <figcaption><a href="https://www.openstreetmap.org/?mlat=52.038794&amp;mlon=4.493025#map=17/52.038794/4.493025">Open grotere kaart in OpenStreetMap <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
       </div>
     </section>
 
@@ -114,33 +130,22 @@
           <p>Meld je aan voor de bijeenkomst, vraag een tafelplek aan of stel een bijdrage voor. Wil je alleen bericht krijgen over volgende edities? Dat kan ook.</p>
         </header>
         <div class="form-panel">
-          <form id="signup-form" hidden>
-            <div class="personal">
-              <label>Naam <span class="optional">(optioneel)</span><input name="name" autocomplete="name" maxlength="100"></label>
-              <label>E-mailadres<input name="email" type="email" autocomplete="email" required maxlength="254"></label>
-            </div>
-            <fieldset>
-              <legend>Ik wil</legend>
-              <label class="choice"><input type="checkbox" id="attend" name="attend"> Naar de bijeenkomst op 30 januari komen</label>
-              <div class="event-options" id="event-options" hidden>
-                <label class="choice"><input type="checkbox" name="setup"> Een tafelplek aanvragen voor mijn setup</label>
-                <label class="choice"><input type="checkbox" id="speak" name="speak"> Een bijdrage voorstellen (maximaal 15 minuten)</label>
-                <label id="topic-field" hidden>Waar wil je iets over vertellen?<textarea name="topic" rows="3" maxlength="500"></textarea></label>
-              </div>
-              <label class="choice"><input type="checkbox" id="updates" name="updates"> E-mail krijgen over volgende MSX-bijeenkomsten</label>
-            </fieldset>
-            <p class="form-note" id="form-note">Verstuur het bericht vanuit je eigen e-mailprogramma. Daarna vragen we je per mail om je e-mailadres en keuzes te bevestigen. Voor een tafelplek of bijdrage krijg je apart bericht.</p>
-            <button class="button" type="submit" aria-describedby="form-note">Open aanmeldmail <span aria-hidden="true">↗</span></button>
-            <p class="form-feedback" id="feedback" role="status" hidden></p>
-            <div id="manual-copy" hidden>
-              <label>Tekst van je aanmeldmail<textarea id="draft" readonly rows="7"></textarea></label>
-              <p class="form-note">Kopieer deze tekst naar een bericht aan <a href="mailto:msxzoetermeer@gmail.com">msxzoetermeer@gmail.com</a>.</p>
-            </div>
-          </form>
-          <noscript><p>Mail naar <a href="mailto:msxzoetermeer@gmail.com">msxzoetermeer@gmail.com</a> en geef aan of je komt, updates wilt ontvangen, een tafelplek nodig hebt of iets wilt presenteren.</p></noscript>
+          <div class="signup-options">
+            <article>
+              <h3>Naar de bijeenkomst</h3>
+              <p>Geef je op voor 30 januari en vraag desgewenst een tafelplek of spreektijd aan.</p>
+              <a class="button" href="https://5f325292.sibforms.com/serve/MUIFAG8W5PQci-f_F69ea99XnEu_ZtL-lPseY242od0-jerS7VunNiminbp1t0CmL6Li9c1DN4aU9gPbNGinxqiLutZvpAP8LEYt7mExX6nU9pHraB9_zGJhz1wyO0OkyfhN3k0CrWxj-EZsHa145lNedo4pBM9woizm8Ho_Z8AeyGNeOwLu22MkRyACTnbKYu0kgc7Od16Z9R8yFw==">Meld je aan <span aria-hidden="true">↗</span></a>
+            </article>
+            <article>
+              <h3>MSX-updates ontvangen</h3>
+              <p>Schrijf je in voor uitnodigingen voor volgende bijeenkomsten.</p>
+              <a class="button" href="https://5f325292.sibforms.com/serve/MUIFAPPCGXI5kpcl0t_BL_Cf89RYKnqpCDfUlV1K-iHXITwqP_OzQk1QiqJecVljwnkqjekBm1ubcP_NGTTajgWsAs8QZDslt0ORjb4U8EKC12pb-soMlBRCMnGAriH4yGonQV9FwmM65xAh5SHSsEKL2tZ6D010yRUz-vrAupOPn-ZO7Y4QbN5JTTWTsPBczUOm9rNQU6Utq6mT4A==">Houd me op de hoogte <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+          <p class="form-note">Je opent een formulier bij Brevo. Bevestig daarna je e-mailadres via de link in je inbox.</p>
           <details class="privacy">
             <summary>Hoe gebruiken we je gegevens?</summary>
-            <p>We gebruiken je aanmelding om je bezoek en eventuele bijdrage te regelen. We sturen je nieuws over volgende bijeenkomsten als je die keuze maakt en bevestigt. Afmelden voor updates kan via <a href="mailto:msxzoetermeer@gmail.com">msxzoetermeer@gmail.com</a>.</p>
+            <p>Brevo verwerkt je aanmelding voor MSX Zoetermeer. We gebruiken je gegevens om je deelname te regelen of je de updates te sturen waarvoor je je hebt ingeschreven. Je kunt je via de afmeldlink in elke nieuwsbrief uitschrijven. Vragen of je deelname annuleren? Mail naar <a href="mailto:msxzoetermeer@gmail.com">msxzoetermeer@gmail.com</a>.</p>
           </details>
         </div>
       </div>
