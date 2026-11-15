@@ -32,5 +32,5 @@ Laat de site op GitHub Pages staan. Koppel het formulier aan een klein HTTPS-ein
 
 - Bijeenkomstfoto's en verslagen van [oktober 2026](https://www.jeroenderwort.nl/msx-meetup-zoetermeer-oktober-2026/), [juni 2026](https://www.jeroenderwort.nl/msx-zoetermeer-editie-2026/) en [december 2025](https://www.jeroenderwort.nl/msx-bijeenkomst-zoetermeer/) via het weblog van Jeroen Derwort.
 - Portret van [Jeroen Derwort](https://www.jeroenderwort.nl/over-mij-jeroen/) via zijn weblog. Het portret van Jeroen Taverne is een uitsnede uit het [interview van Conexión MSX in Nijmegen](https://www.youtube.com/watch?v=ogYD6qCQdlw). Zijn hardwareprojecten staan op [GitHub](https://github.com/jeroentaverne/msx_keyboard_interface) en bij [MSXdev](https://www.msxdev.org/2024/04/27/msxdev24-sponsoring-msx-pico/).
-- Informatie over Steven van der Kwartel via [zijn openbare profiel](https://nl.linkedin.com/in/steven-van-der-kwartel-272a207).
+- De organisatie leverde het portret van Steven van der Kwartel aan. Achtergrondinformatie via [zijn openbare profiel](https://nl.linkedin.com/in/steven-van-der-kwartel-272a207).
 - [MSX-logo](https://commons.wikimedia.org/wiki/File:MSX-Logo.svg) via Wikimedia Commons. De licenties voor de lettertypen staan bij de lokale fontbestanden.
