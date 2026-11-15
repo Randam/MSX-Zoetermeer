@@ -8,7 +8,7 @@ python3 -m http.server 8765 --directory docs
 
 ## Volgende editie
 
-De volgende editie is op zaterdag 30 januari 2027 in Wijkcentrum De Vlieger. De bevestigde tijden kunnen bij **Praktisch** in `docs/index.html` worden toegevoegd.
+De volgende editie is op zaterdag 30 januari 2027 van 10:00 tot 16:00 uur in Wijkcentrum De Vlieger.
 
 ## Aanmeldingen en updates in Brevo
 

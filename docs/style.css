@@ -65,6 +65,7 @@ figcaption { padding: 11px 2px 2px; color: #cfcfc2; font-size: 10px; }
 .next { grid-column: 1/-1; position: relative; background: var(--yellow); color: var(--dark); padding: 19px 68px 22px 24px; }
 .next .eyebrow { color: inherit; font-size: 11px; }
 .next-date { margin: 5px 0 0; font: 400 clamp(21px, 3vw, 42px)/1.05 var(--display); letter-spacing: -.035em; text-transform: uppercase; }
+.next-details { margin: 8px 0 0; font-size: 15px; font-weight: 700; }
 .next-arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 42px; height: 42px; font-size: 23px; border: 1px solid var(--dark); text-decoration: none; }
 .next-arrow:hover { color: var(--yellow); background: var(--dark); }
 
@@ -85,7 +86,6 @@ figcaption { padding: 11px 2px 2px; color: #cfcfc2; font-size: 10px; }
 .mark { border: 1px solid currentColor; display: inline-grid; place-items: center; min-width: 32px; height: 32px; font: 600 19px var(--mono); }
 h3 { font: 400 20px/1.18 var(--display); letter-spacing: -.025em; margin: 17px 0 8px; }
 article p { margin: 0; }
-.note { font-weight: 700; margin-top: 10px; }
 .event-grid .underlined { display: inline-block; margin-top: 5px; }
 .location-layout { display: grid; grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); align-items: center; gap: 48px; }
 .location address { font-style: normal; font-weight: 700; margin-top: 17px; }
