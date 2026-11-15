@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Archivo Black;
-  src: url("assets/archivo.woff2") format("woff2");
+  font-family: Bungee;
+  src: url("assets/bungee.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
@@ -23,7 +23,7 @@
   --yellow: #f7cc57;
   --sage: #d6e0da;
   --line: #5b5b53;
-  --display: "Archivo Black", Impact, sans-serif;
+  --display: "Bungee", Impact, sans-serif;
   --mono: "IBM Plex Mono", monospace;
   color-scheme: dark;
 }
@@ -54,9 +54,9 @@ nav a:hover, .underlined:hover { color: var(--yellow); }
 .hero-copy { z-index: 1; padding-bottom: 12px; }
 .eyebrow { display: flex; align-items: center; gap: 10px; margin: 0; color: var(--yellow); }
 .square { width: 9px; height: 9px; background: currentColor; display: inline-block; flex: none; }
-h1, h2 { margin: 0; font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: -.065em; }
+h1, h2 { margin: 0; font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: -.035em; }
 h1 { font-size: clamp(57px, 7.65vw, 112px); line-height: .92; margin: 22px 0 26px; }
-h1 span { display: block; color: var(--yellow); font-size: .81em; }
+h1 span { display: block; color: var(--yellow); font-size: .74em; }
 .intro { max-width: 380px; margin: 0; color: #ddded3; }
 .hero-action { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 26px; margin-top: 26px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 22px; border: 1px solid var(--yellow); padding: 16px 18px; background: var(--yellow); color: var(--dark); text-decoration: none; min-height: 50px; }
@@ -67,7 +67,7 @@ h1 span { display: block; color: var(--yellow); font-size: .81em; }
 figcaption { padding: 11px 2px 2px; color: #cfcfc2; font-size: 10px; }
 .next { grid-column: 1/-1; position: relative; background: var(--yellow); color: var(--dark); padding: 19px 68px 22px 24px; }
 .next .eyebrow { color: inherit; font-size: 11px; }
-.next-date { margin: 5px 0 0; font: 400 clamp(21px, 3vw, 42px)/1.05 var(--display); letter-spacing: -.06em; text-transform: uppercase; }
+.next-date { margin: 5px 0 0; font: 400 clamp(21px, 3vw, 42px)/1.05 var(--display); letter-spacing: -.035em; text-transform: uppercase; }
 .next-arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 42px; height: 42px; font-size: 23px; border: 1px solid var(--dark); text-decoration: none; }
 .next-arrow:hover { color: var(--yellow); background: var(--dark); }
 
@@ -85,7 +85,7 @@ figcaption { padding: 11px 2px 2px; color: #cfcfc2; font-size: 10px; }
 .event-grid article:nth-child(2) { background: var(--yellow); }
 .event-grid article:nth-child(3) { background: var(--paper); }
 .mark { border: 1px solid currentColor; display: inline-grid; place-items: center; min-width: 32px; height: 32px; font: 600 19px var(--mono); }
-h3 { font: 400 23px/1.12 var(--display); letter-spacing: -.04em; margin: 17px 0 8px; }
+h3 { font: 400 20px/1.18 var(--display); letter-spacing: -.025em; margin: 17px 0 8px; }
 article p { margin: 0; }
 .note { font-weight: 700; margin-top: 10px; }
 
@@ -134,7 +134,7 @@ legend { margin-bottom: 5px; padding: 0; }
   .masthead { flex-wrap: wrap; gap: 12px; padding-block: 15px; }
   nav { order: 3; width: 100%; justify-content: space-between; padding-top: 9px; }
   .hero { grid-template-columns: 1fr; gap: 22px; padding-block: 44px 38px; }
-  .hero h1 { font-size: clamp(44px, 11.5vw, 92px); }
+  .hero h1 { font-size: clamp(40px, 11vw, 87px); }
   .hero-image { grid-row: 3; }
   .hero-image img { aspect-ratio: 1.65; }
   .event, .archive, .signup, .team { padding-block: 61px; }
