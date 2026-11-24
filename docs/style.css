@@ -95,7 +95,7 @@ article p { margin: 0; }
 .location address { font-style: normal; font-weight: 700; margin-top: 17px; }
 .location .button { margin-top: 22px; }
 .location .button:hover { background: var(--dark); border-color: var(--dark); color: var(--paper); }
-.location-map { margin: 0; background: var(--surface); border: 1px solid #92b6db; padding: 8px; }
+.location-map { margin: 0; background: var(--surface); border: 1px solid #24496D; padding: 8px; }
 .location-map iframe { display: block; width: 100%; height: 340px; border: 0; }
 .location-map figcaption { color: var(--dark); }
 .location-map a { text-underline-offset: .2em; }
