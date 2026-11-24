@@ -136,7 +136,7 @@ article p { margin: 0; }
   .wrap { width: calc(100% - 40px); }
   .brand { width: 100%; }
   .masthead { flex-wrap: wrap; gap: 12px; padding-block: 15px; }
-  nav { order: 3; width: 100%; justify-content: space-between; padding-top: 9px; }
+  nav { order: 3; width: 100%; justify-content: center; padding-top: 9px; flex-wrap:balance; }
   .hero { grid-template-columns: 1fr; gap: 22px; padding-block: 44px 38px; }
   .hero h1 { font-size: clamp(40px, 11vw, 87px); }
   .hero-image { grid-row: 3; }
@@ -151,7 +151,7 @@ article p { margin: 0; }
   .event-grid { gap: 10px; }
 }
 @media (max-width: 365px) {
-  nav { gap: 6px; font-size: 11px; }
+  nav { gap: .8rem; font-size: 11px; justify-content:center; }
   .brand { width: 100%; }
   .nav-cta { gap: 7px; padding-inline: 10px; }
 }
